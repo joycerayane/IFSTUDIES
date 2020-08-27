@@ -1,0 +1,16 @@
+.navbar-brand{
+	font-size: 30px;
+
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	background: lightblue;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
