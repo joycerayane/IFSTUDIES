@@ -3,27 +3,52 @@
 </h1>
 
 
-<div class="container">
+<div class="container" *ngFor="let q of questoes; let i = index">
 
 	<div class="row">
 		<table class="table table-bordered">
 			<tbody>
 				<tr>
 					<td>
-						<p>Enunciado</p>
+						<p>{{q.enunciado}}</p>
 					</td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
 
-	<div class="row">
-		<div class="col">
+	<div class="row" >
+		<div class="col" >
 			<ul class="list-group">
-  				<li class="list-group-item"><p><input type="radio"> a)</p></li>
-  				<li class="list-group-item"><p><input type="radio"> b)</p></li>
-  				<li class="list-group-item"><p><input type="radio"> c)</p></li>
-  				<li class="list-group-item"><p><input type="radio"> d)</p></li>
+
+  				<li class="list-group-item">
+  					<label>
+                        a) <input type="radio" name="q{{i+1}}" value="a" (click)="verificarResposta(q.certa, 'a')">
+                        {{q.a}}
+                    </label>
+                </li>
+
+  				<li class="list-group-item">
+  					<label>
+                        b) <input type="radio" name="q{{i+1}}" value="b" (click)="verificarResposta(q.certa, 'b')">
+                        {{q.b}}
+                    </label>
+                </li>
+
+  				<li class="list-group-item">
+  					<label>
+                        c) <input type="radio" name="q{{i+1}}" value="c" (click)="verificarResposta(q.certa, 'c')">
+                        {{q.c}}
+                    </label>
+                </li>
+
+  				<li class="list-group-item">
+  					<label>
+                        d) <input type="radio" name="q{{i+1}}" value="d" (click)="verificarResposta(q.certa, 'd')">
+                        {{q.d}}
+                    </label>
+                </li>
+
 			</ul>
 		</div>
 	</div>

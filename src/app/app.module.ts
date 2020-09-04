@@ -12,9 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ExerciciosComponent } from './exercicios/exercicios.component';
 import { SimuladosComponent } from './simulados/simulados.component';
 import { SobreComponent } from './sobre/sobre.component';
-import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
-import { CheckComponent } from './check/check.component';
 import { CursosComponent } from './cursos/cursos.component';
 import { EstrategiaComponent } from './estrategia/estrategia.component';
 
@@ -29,9 +27,7 @@ import { EstrategiaComponent } from './estrategia/estrategia.component';
     ExerciciosComponent,
     SimuladosComponent,
     SobreComponent,
-    LoginComponent,
     HomeComponent,
-    CheckComponent,
     CursosComponent,
     EstrategiaComponent
   ],
