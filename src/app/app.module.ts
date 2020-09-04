@@ -14,6 +14,9 @@ import { SimuladosComponent } from './simulados/simulados.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
+import { CheckComponent } from './check/check.component';
+import { CursosComponent } from './cursos/cursos.component';
+import { EstrategiaComponent } from './estrategia/estrategia.component';
 
 
 
@@ -27,7 +30,10 @@ import { HomeComponent } from './home/home.component';
     SimuladosComponent,
     SobreComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    CheckComponent,
+    CursosComponent,
+    EstrategiaComponent
   ],
   imports: [
     BrowserModule,
