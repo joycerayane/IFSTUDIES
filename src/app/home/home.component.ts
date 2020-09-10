@@ -7,13 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  imageMenina = './assets/menina_estudando.png';
+  imagem01 = './assets/imagem01-carousel.jpg';
+  imagem02 = './assets/imagem02-carousel.jpg';
 
-  IconeEstudo = 'https://image.flaticon.com/icons/svg/2145/2145296.svg';
-
-  IconeCheck = 'https://image.flaticon.com/icons/svg/1373/1373009.svg';
-
-  IconeCursos = 'https://image.flaticon.com/icons/svg/2000/2000920.svg';
+  imageLogo = './assets/logo.png';
 
   constructor() { }
 

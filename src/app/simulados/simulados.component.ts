@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SimuladosComponent implements OnInit {
 
+  Icone = 'https://image.flaticon.com/icons/svg/1205/1205526.svg';
+
   constructor() { }
 
   ngOnInit(): void {

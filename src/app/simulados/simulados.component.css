@@ -1,0 +1,18 @@
+
+
+
+.linha-horizontal {
+ border-bottom: 5px solid;
+ box-sizing: border-box;
+ color: #3CB371;
+ width: 100px;
+}
+
+ a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  color: #3CB371;
+}

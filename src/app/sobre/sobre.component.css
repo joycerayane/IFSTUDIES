@@ -1,0 +1,7 @@
+.linha-horizontal {
+ border-bottom: 10px solid;
+ box-sizing: border-box;
+ color: #3CB371;
+ width: 300px;
+}
+

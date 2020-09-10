@@ -8,7 +8,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { DisciplinasModule } from './disciplinas/disciplinas.module';
 import { AppComponent } from './app.component';
 import { HeadComponent } from './head/head.component';
-import { FooterComponent } from './footer/footer.component';
 import { ExerciciosComponent } from './exercicios/exercicios.component';
 import { SimuladosComponent } from './simulados/simulados.component';
 import { SobreComponent } from './sobre/sobre.component';
@@ -23,7 +22,6 @@ import { EstrategiaComponent } from './estrategia/estrategia.component';
   declarations: [
     AppComponent,
     HeadComponent,
-    FooterComponent,
     ExerciciosComponent,
     SimuladosComponent,
     SobreComponent,

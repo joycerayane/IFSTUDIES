@@ -1,40 +1,63 @@
 
 
-div .bolinha {
+.linha-horizontal {
+ border-bottom: 5px solid;
+ box-sizing: border-box;
+ color: #3CB371;
+ width: 150px;
+}
+
+div .atalho {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 40px;
-  border-radius: 50%;
-  height: 160px;
-  
-}
-
-div .bolinha:hover {
-  transform: scale(1.1);
-  transition: .7s;
-  
-}
-
-div .bolinha img {  
-  width: 50px;
-  height: 50px;
-}
-
-div .atalho{
-  margin: 20px ;
-  margin-top: 100px;
-
-}
-
-.atalho a{
+  margin: 10px;
+  height: 100px;
   cursor: pointer;
-  text-decoration: none;
-  color: black;
+  border-radius: 5px;
+  background: #3CB371;
+  color: white;
 }
 
-div .texto{
+
+div .atalho:hover {  
+  background: black;
+  transform: scale(1.1);
+  transition: .7s;  
+  color: #3CB371;
+}
+
+.card{
+  background: black;
+  color: #3CB371;
+}
+
+.animate__animated.animate__zoomIn{
+  --animate-duration: 3s;
+}
+
+.footer{
   
+  background: black;
+  color: white;
+}
+
+.footer article{
   text-align: center;
+}
+
+.informacoes{
+  background: black;
+  color: white;
+  margin: 0px;
+}
+
+.colunas{
+  
+  margin: 40px;
+}
+
+.card{
+  margin-bottom: 10px;
 }
