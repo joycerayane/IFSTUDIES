@@ -28,9 +28,10 @@ div .atalho:hover {
   color: #3CB371;
 }
 
-.card{
-  background: black;
-  color: #3CB371;
+.card img{
+  float: left;
+  border-radius: 50%;
+
 }
 
 .animate__animated.animate__zoomIn{
