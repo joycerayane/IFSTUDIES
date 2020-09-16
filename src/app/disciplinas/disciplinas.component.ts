@@ -12,4 +12,10 @@ export class DisciplinasComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  mostrarListaPT: boolean = true;
+
+  AlterarListaMateria(){
+  	this.mostrarListaPT = !this.mostrarListaPT;
+  }
+
 }

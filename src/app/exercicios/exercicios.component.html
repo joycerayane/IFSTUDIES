@@ -21,43 +21,35 @@
 		<div class="col" >
 			<ul class="list-group">
 
-  				<li class="list-group-item">
-  					<label>
-                        a) <input type="radio" name="q{{i+1}}" value="a" (click)="verificarResposta(q.certa, 'a')">
-                        {{q.a}}
-                    </label>
-                </li>
+  				<li class="list-group-item" [class.certa]="a.value === q.certa && a.checked" [class.errada]="a.value !== q.certa && a.checked" (click)="verificarResposta(q.certa, 'a')">
+		            <label>
+		                a) <input type="radio" name="q{{i+1}}" value="a" #a (click)="verificarResposta(q.certa, 'a')">
+		                {{q.a}}
+		            </label>
+		        </li>
 
-  				<li class="list-group-item">
+  				<li class="list-group-item" [class.certa]="b.value === q.certa && b.checked" [class.errada]="b.value !== q.certa && b.checked">
   					<label>
-                        b) <input type="radio" name="q{{i+1}}" value="b" (click)="verificarResposta(q.certa, 'b')">
+                        b) <input type="radio" name="q{{i+1}}" value="b" #b (click)="verificarResposta(q.certa, 'b')">
                         {{q.b}}
                     </label>
                 </li>
 
-  				<li class="list-group-item">
+  				<li class="list-group-item" [class.certa]="c.value === q.certa && c.checked" [class.errada]="c.value !== q.certa && c.checked">
   					<label>
-                        c) <input type="radio" name="q{{i+1}}" value="c" (click)="verificarResposta(q.certa, 'c')">
+                        c) <input type="radio" name="q{{i+1}}" value="c" #c (click)="verificarResposta(q.certa, 'c')">
                         {{q.c}}
                     </label>
                 </li>
 
-  				<li class="list-group-item">
+  				<li class="list-group-item" [class.certa]="d.value === q.certa && d.checked" [class.errada]="d.value !== q.certa && d.checked">
   					<label>
-                        d) <input type="radio" name="q{{i+1}}" value="d" (click)="verificarResposta(q.certa, 'd')">
+                        d) <input type="radio" name="q{{i+1}}" value="d" #d (click)="verificarResposta(q.certa, 'd')">
                         {{q.d}}
                     </label>
                 </li>
 
 			</ul>
-		</div>
-	</div>
-
-	<br>
-
-	<div class="row">
-		<div class="col text-right">
-			<button class="btn btn-primary">Enviar Resposta</button>
 		</div>
 	</div>
 

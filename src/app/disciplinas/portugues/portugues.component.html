@@ -1,287 +1,289 @@
 
 
-<div class="row animate__animated animate__fadeInUp">
+<div *ngIf="this.lista">
+  <div class="row animate__animated animate__fadeInUp">
 
-  <div class="col">
-    <div (click)="obterArquivo('assets/html/portugues/InterpretacaoTextual.html')">
-      
+    <div class="col">
+      <div   (click)="obterArquivo('assets/html/portugues/InterpretacaoTextual.html')">
+        
+          <div class="card border-dark card-disciplina" >
+            <div class="card-body">
+              <p class="card-title">Interpretação Textual</p>
+              <img [src]="Icone">
+            </div>
+         </div>
+
+      </div>
+    </div>
+
+
+    <div class="col">
+      <div (click)="obterArquivo('assets/html/portugues/IntroducaoLinguistica.html')">
+        
+          <div class="card border-dark card-disciplina" >
+            <div class="card-body">
+              <p class="card-title">Introdução à Linguística</p>
+              <img [src]="Icone">
+            </div>
+         </div>
+
+      </div>
+    </div>
+
+
+    <div class="col">
+      <div (click)="obterArquivo('assets/html/portugues/GenerosTextuais.html')">
+        
+          <div class="card border-dark card-disciplina" >
+            <div class="card-body">
+              <p class="card-title">Gêneros Textuais</p>
+              <img [src]="Icone">
+            </div>
+         </div>
+
+      </div>
+    </div>
+    
+
+    <div class="col">
+      <div (click)="obterArquivo('assets/html/portugues/TiposTextuais.html')">
+        
+          <div class="card border-dark card-disciplina" >
+            <div class="card-body">
+              <p class="card-title">Tipos Textuais</p>
+              <img [src]="Icone">
+            </div>
+         </div>
+
+      </div>
+    </div>
+
+   </div>
+
+
+  <div class="row animate__animated animate__fadeInUp">
+
+    <div class="col">
+      <div (click)="obterArquivo('assets/html/portugues/Fonologia.html')">
+
         <div class="card border-dark card-disciplina" >
           <div class="card-body">
-            <p class="card-title">Interpretação Textual</p>
+            <p class="card-title">Fonologia</p>
             <img [src]="Icone">
           </div>
-       </div>
-
-    </div>
-  </div>
-
-
-  <div class="col">
-    <div (click)="obterArquivo('assets/html/portugues/IntroducaoLinguistica.html')">
-      
-        <div class="card border-dark card-disciplina" >
-          <div class="card-body">
-            <p class="card-title">Introdução à Linguística</p>
-            <img [src]="Icone">
-          </div>
-       </div>
-
-    </div>
-  </div>
-
-
-  <div class="col">
-    <div (click)="obterArquivo('assets/html/portugues/GenerosTextuais.html')">
-      
-        <div class="card border-dark card-disciplina" >
-          <div class="card-body">
-            <p class="card-title">Gêneros Textuais</p>
-            <img [src]="Icone">
-          </div>
-       </div>
-
-    </div>
-  </div>
-	
-
-  <div class="col">
-    <div (click)="obterArquivo('assets/html/portugues/TiposTextuais.html')">
-      
-        <div class="card border-dark card-disciplina" >
-          <div class="card-body">
-            <p class="card-title">Tipos Textuais</p>
-            <img [src]="Icone">
-          </div>
-       </div>
-
-    </div>
-  </div>
-
- </div>
-
-
-<div class="row animate__animated animate__fadeInUp">
-
-  <div class="col">
-    <div (click)="obterArquivo('assets/html/portugues/Fonologia.html')">
-
-      <div class="card border-dark card-disciplina" >
-        <div class="card-body">
-          <p class="card-title">Fonologia</p>
-          <img [src]="Icone">
         </div>
+
       </div>
+    </div>
 
+    <div class="col">
+      <div (click)="obterArquivo('assets/html/portugues/AcentuacaoGrafica.html')">
+
+        <div class="card border-dark card-disciplina" >
+            <div class="card-body">
+              <p class="card-title">Acentuação Gráfica</p>
+              <img [src]="Icone">
+            </div>
+         </div>
+
+      </div>
+    </div>
+
+    <div class="col">
+      <div (click)="obterArquivo('assets/html/portugues/RegrasEspeciais.html')">
+
+        <div class="card border-dark card-disciplina" >
+            <div class="card-body">
+              <p class="card-title">Regras Especiais</p>
+              <img [src]="Icone">
+            </div>
+         </div>
+
+      </div>   
+    </div>
+
+    <div class="col">
+      <div (click)="obterArquivo('assets/html/portugues/ReformaOrtografica.html')">
+
+        <div class="card border-dark card-disciplina" >
+            <div class="card-body">
+              <p class="card-title">Reforma Ortográfica</p>
+              <img [src]="Icone">
+            </div>
+         </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row animate__animated animate__fadeInUp">
+
+    <div class="col">
+      <div (click)="obterArquivo('assets/html/portugues/Morfologia.html')">
+
+        <div class="card border-dark card-disciplina" >
+            <div class="card-body">
+              <p class="card-title">Morfologia</p>
+              <img [src]="Icone">
+            </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col ">
+      <div (click)="obterArquivo('assets/html/portugues/EmpregoPorques.html')">
+
+        <div class="card border-dark card-disciplina" >
+            <div class="card-body">
+              <p class="card-title">Emprego dos Porquês</p>
+              <img [src]="Icone">
+            </div>
+         </div>
+
+      </div>
+    </div>
+
+    <div class="col">
+      <div (click)="obterArquivo('assets/html/portugues/AnaliseSintatica.html')">
+
+        <div class="card border-dark card-disciplina" >
+            <div class="card-body">
+              <p class="card-title">Análise Sintática</p>
+              <img [src]="Icone">
+            </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col">
+      <div (click)="obterArquivo('assets/html/portugues/FuncoesPronomesRelativos.html')">
+
+        <div class="card border-dark card-disciplina" >
+            <div class="card-body">
+              <p class="card-title">Funções dos Pronomes Relativos</p>
+              <img [src]="Icone">
+            </div>
+         </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row animate__animated animate__fadeInUp">
+
+    <div class="col">
+      <div (click)="obterArquivo('assets/html/portugues/FuncoesPronomesRelativos.html')">
+
+        <div class="card border-dark card-disciplina" >
+            <div class="card-body">
+              <p class="card-title">Colocação Pronominal</p>
+              <img [src]="Icone">
+            </div>
+        </div>
+
+     </div>
+    </div>
+
+    <div class="col">
+      <div (click)="obterArquivo('assets/html/portugues/FuncoesPronomesRelativos.html')">
+
+        <div class="card border-dark card-disciplina" >
+            <div class="card-body">
+              <p class="card-title">Período Composto</p>
+              <img [src]="Icone">
+            </div>
+        </div>
+
+     </div>
+    </div>
+
+    <div class="col">
+      <div (click)="obterArquivo('assets/html/portugues/FuncoesPronomesRelativos.html')">
+
+        <div class="card border-dark card-disciplina" >
+            <div class="card-body">
+              <p class="card-title">Concordância Nominal</p>
+              <img [src]="Icone">
+            </div>
+        </div>
+
+     </div>
+    </div>
+
+    <div class="col">
+      <div (click)="obterArquivo('assets/html/portugues/FuncoesPronomesRelativos.html')">
+
+        <div class="card border-dark card-disciplina" >
+            <div class="card-body">
+              <p class="card-title">Concordância Verbal</p>
+              <img [src]="Icone">
+            </div>
+        </div>
+
+     </div>
     </div>
   </div>
 
-  <div class="col">
-    <div (click)="obterArquivo('assets/html/portugues/AcentuacaoGrafica.html')">
+  <div class="row animate__animated animate__fadeInUp">
 
-      <div class="card border-dark card-disciplina" >
-          <div class="card-body">
-            <p class="card-title">Acentuação Gráfica</p>
-            <img [src]="Icone">
-          </div>
-       </div>
+    <div class="col">
+      <div (click)="obterArquivo('assets/html/portugues/FuncoesPronomesRelativos.html')">
 
+        <div class="card border-dark card-disciplina" >
+            <div class="card-body">
+              <p class="card-title">Acento Indicativo de Crase</p>
+              <img [src]="Icone">
+            </div>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="col">
+      <div (click)="obterArquivo('assets/html/portugues/FuncoesPronomesRelativos.html')">
+
+        <div class="card border-dark card-disciplina" >
+            <div class="card-body">
+              <p class="card-title">Regência Nominal</p>
+              <img [src]="Icone">
+            </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col">
+      <div (click)="obterArquivo('assets/html/portugues/FuncoesPronomesRelativos.html')">
+
+        <div class="card border-dark card-disciplina" >
+            <div class="card-body">
+              <p class="card-title">Regência Verbal</p>
+              <img [src]="Icone">
+            </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="col">
+      <div (click)="obterArquivo('assets/html/portugues/FuncoesPronomesRelativos.html')">
+
+        <div class="card border-dark card-disciplina" >
+            <div class="card-body">
+              <p class="card-title">Estilística</p>
+              <img [src]="Icone">
+            </div>
+        </div>
+
+      </div>
     </div>
   </div>
-
-  <div class="col">
-    <div (click)="obterArquivo('assets/html/portugues/RegrasEspeciais.html')">
-
-      <div class="card border-dark card-disciplina" >
-          <div class="card-body">
-            <p class="card-title">Regras Especiais</p>
-            <img [src]="Icone">
-          </div>
-       </div>
-
-    </div>   
-  </div>
-
-  <div class="col">
-    <div (click)="obterArquivo('assets/html/portugues/ReformaOrtografica.html')">
-
-      <div class="card border-dark card-disciplina" >
-          <div class="card-body">
-            <p class="card-title">Reforma Ortográfica</p>
-            <img [src]="Icone">
-          </div>
-       </div>
-
-    </div>
-  </div>
-
 </div>
 
-<div class="row animate__animated animate__fadeInUp">
-
-  <div class="col">
-    <div (click)="obterArquivo('assets/html/portugues/Morfologia.html')">
-
-      <div class="card border-dark card-disciplina" >
-          <div class="card-body">
-            <p class="card-title">Morfologia</p>
-            <img [src]="Icone">
-          </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="col ">
-    <div (click)="obterArquivo('assets/html/portugues/EmpregoPorques.html')">
-
-      <div class="card border-dark card-disciplina" >
-          <div class="card-body">
-            <p class="card-title">Emprego dos Porquês</p>
-            <img [src]="Icone">
-          </div>
-       </div>
-
-    </div>
-  </div>
-
-  <div class="col">
-    <div (click)="obterArquivo('assets/html/portugues/AnaliseSintatica.html')">
-
-      <div class="card border-dark card-disciplina" >
-          <div class="card-body">
-            <p class="card-title">Análise Sintática</p>
-            <img [src]="Icone">
-          </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="col">
-    <div (click)="obterArquivo('assets/html/portugues/FuncoesPronomesRelativos.html')">
-
-      <div class="card border-dark card-disciplina" >
-          <div class="card-body">
-            <p class="card-title">Funções dos Pronomes Relativos</p>
-            <img [src]="Icone">
-          </div>
-       </div>
-    </div>
-  </div>
-
-</div>
-
-<div class="row animate__animated animate__fadeInUp">
-
-  <div class="col">
-    <div (click)="obterArquivo('assets/html/portugues/FuncoesPronomesRelativos.html')">
-
-      <div class="card border-dark card-disciplina" >
-          <div class="card-body">
-            <p class="card-title">Colocação Pronominal</p>
-            <img [src]="Icone">
-          </div>
-      </div>
-
-   </div>
-  </div>
-
-  <div class="col">
-    <div (click)="obterArquivo('assets/html/portugues/FuncoesPronomesRelativos.html')">
-
-      <div class="card border-dark card-disciplina" >
-          <div class="card-body">
-            <p class="card-title">Período Composto</p>
-            <img [src]="Icone">
-          </div>
-      </div>
-
-   </div>
-  </div>
-
-  <div class="col">
-    <div (click)="obterArquivo('assets/html/portugues/FuncoesPronomesRelativos.html')">
-
-      <div class="card border-dark card-disciplina" >
-          <div class="card-body">
-            <p class="card-title">Concordância Nominal</p>
-            <img [src]="Icone">
-          </div>
-      </div>
-
-   </div>
-  </div>
-
-  <div class="col">
-    <div (click)="obterArquivo('assets/html/portugues/FuncoesPronomesRelativos.html')">
-
-      <div class="card border-dark card-disciplina" >
-          <div class="card-body">
-            <p class="card-title">Concordância Verbal</p>
-            <img [src]="Icone">
-          </div>
-      </div>
-
-   </div>
-  </div>
-</div>
-
-<div class="row animate__animated animate__fadeInUp">
-
-  <div class="col">
-    <div (click)="obterArquivo('assets/html/portugues/FuncoesPronomesRelativos.html')">
-
-      <div class="card border-dark card-disciplina" >
-          <div class="card-body">
-            <p class="card-title">Acento Indicativo de Crase</p>
-            <img [src]="Icone">
-          </div>
-      </div>
-      
-    </div>
-  </div>
-
-  <div class="col">
-    <div (click)="obterArquivo('assets/html/portugues/FuncoesPronomesRelativos.html')">
-
-      <div class="card border-dark card-disciplina" >
-          <div class="card-body">
-            <p class="card-title">Regência Nominal</p>
-            <img [src]="Icone">
-          </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="col">
-    <div (click)="obterArquivo('assets/html/portugues/FuncoesPronomesRelativos.html')">
-
-      <div class="card border-dark card-disciplina" >
-          <div class="card-body">
-            <p class="card-title">Regência Verbal</p>
-            <img [src]="Icone">
-          </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="col">
-    <div (click)="obterArquivo('assets/html/portugues/FuncoesPronomesRelativos.html')">
-
-      <div class="card border-dark card-disciplina" >
-          <div class="card-body">
-            <p class="card-title">Estilística</p>
-            <img [src]="Icone">
-          </div>
-      </div>
-
-    </div>
-  </div>
-</div>
 
 
-
-<div [innerHTML]="paginaCarregada"></div>
+<div *ngIf="!this.lista" [innerHTML]="paginaCarregada"></div>
 

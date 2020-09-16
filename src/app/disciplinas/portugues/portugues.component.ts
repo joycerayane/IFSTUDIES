@@ -19,9 +19,12 @@ export class PortuguesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  lista: boolean = true;
+
   obterArquivo(caminho: string): void {
     this.http.get(caminho, { responseType: 'text' }).subscribe((html) =>
       this.paginaCarregada = html);
+      this.lista = !this.lista;
   }
 
 

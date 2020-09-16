@@ -1,0 +1,14 @@
+input[type="radio"] {
+  display: none;
+}
+
+.certa{
+	background: lightgreen;
+}
+.errada{
+	background: red;
+}
+
+label{
+	cursor: pointer;
+}

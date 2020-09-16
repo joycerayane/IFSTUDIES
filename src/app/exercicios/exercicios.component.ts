@@ -12,13 +12,22 @@ export class ExerciciosComponent implements OnInit {
     a: 2.56, b: 3.14, c: 3.16, d: 1.68, certa: 'b'
   }];
 
-  constructor() { }
+  escolha: string;
+  acertou: boolean;
+  constructor() {
+    
+  }
 
   ngOnInit(): void {
+    
   }
 
   verificarResposta(correta: string, escolha: string) {
-    console.log(`correta: ${correta} escolhida: ${escolha}`);
+    this.escolha = escolha;
+    if (escolha === correta) {
+      this.acertou = true;
+    } else {
+      this.acertou = false;
+    }
   }
-
 }
