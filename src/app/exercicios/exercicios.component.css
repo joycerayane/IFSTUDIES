@@ -3,12 +3,31 @@ input[type="radio"] {
 }
 
 .certa{
-	background: lightgreen;
+	background: #E0FFFF;
+	border-color: #3CB371;
 }
 .errada{
-	background: red;
+	background: #FFDAB9;
+	border-color: #B22222;
 }
 
 label{
 	cursor: pointer;
+	
+}
+
+#resposta-errada{
+	background: #FFA07A;
+
+}
+
+.table{
+	border-width: 2px;
+	border-color: black;
+	border-radius: 10px;
+}
+
+li{
+	border-width: 1px;
+    border-color: black;
 }

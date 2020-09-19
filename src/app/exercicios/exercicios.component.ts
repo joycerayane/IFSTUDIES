@@ -1,3 +1,5 @@
+import { Questao } from './../model/questao';
+import { ExercicioService } from './../model/exercicio.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,19 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExerciciosComponent implements OnInit {
 
-  questoes = [{
-    enunciado: 'Qual o valor aproximado de PI?',
-    a: 2.56, b: 3.14, c: 3.16, d: 1.68, certa: 'b'
-  }];
-
+  questoes: Questao[];
   escolha: string;
   acertou: boolean;
-  constructor() {
-    
+  constructor(private ex: ExercicioService) {
+    this.escolha = '';
+    this.acertou = undefined;
   }
 
   ngOnInit(): void {
-    
+    this.ex.obterQuestoes().subscribe(res => {
+      this.questoes = res;
+    });
   }
 
   verificarResposta(correta: string, escolha: string) {

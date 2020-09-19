@@ -1,11 +1,11 @@
 <h1 class="text-center">
 	Exercícios
-</h1>
+</h1> 
 
 
 <div class="container" *ngFor="let q of questoes; let i = index">
 
-	<div class="row">
+	<div class="row"> 
 		<table class="table table-bordered">
 			<tbody>
 				<tr>
@@ -21,36 +21,53 @@
 		<div class="col" >
 			<ul class="list-group">
 
-  				<li class="list-group-item" [class.certa]="a.value === q.certa && a.checked" [class.errada]="a.value !== q.certa && a.checked" (click)="verificarResposta(q.certa, 'a')">
-		            <label>
+				<label>
+					<li class="list-group-item" [class.certa]="a.value === q.certa && a.checked" [class.errada]="a.value !== q.certa && a.checked">
 		                a) <input type="radio" name="q{{i+1}}" value="a" #a (click)="verificarResposta(q.certa, 'a')">
 		                {{q.a}}
-		            </label>
-		        </li>
+		            </li>
+		        </label>
+		        
 
-  				<li class="list-group-item" [class.certa]="b.value === q.certa && b.checked" [class.errada]="b.value !== q.certa && b.checked">
-  					<label>
+  				<label>
+  					<li class="list-group-item" [class.certa]="b.value === q.certa && b.checked" [class.errada]="b.value !== q.certa && b.checked">
                         b) <input type="radio" name="q{{i+1}}" value="b" #b (click)="verificarResposta(q.certa, 'b')">
                         {{q.b}}
-                    </label>
-                </li>
+                    </li>
+                </label>
 
-  				<li class="list-group-item" [class.certa]="c.value === q.certa && c.checked" [class.errada]="c.value !== q.certa && c.checked">
-  					<label>
+
+  				<label>
+  					<li class="list-group-item" [class.certa]="c.value === q.certa && c.checked" [class.errada]="c.value !== q.certa && c.checked">
                         c) <input type="radio" name="q{{i+1}}" value="c" #c (click)="verificarResposta(q.certa, 'c')">
                         {{q.c}}
-                    </label>
-                </li>
+                    </li>
+                </label>
 
-  				<li class="list-group-item" [class.certa]="d.value === q.certa && d.checked" [class.errada]="d.value !== q.certa && d.checked">
-  					<label>
+
+  				<label>
+  					<li class="list-group-item" [class.certa]="d.value === q.certa && d.checked" [class.errada]="d.value !== q.certa && d.checked">
                         d) <input type="radio" name="q{{i+1}}" value="d" #d (click)="verificarResposta(q.certa, 'd')">
                         {{q.d}}
-                    </label>
-                </li>
+                    </li>
+                </label>
 
 			</ul>
+
+			<div *ngIf="this.acertou">
+				
+			</div>
+
+			<div *ngIf="!this.acertou">
+				<div class="card border border-danger" id="resposta-errada" style="width: 18rem;">
+				  <div class="card-body">
+				   <p>Ops! Resposta errada.</p>
+				   <p>A resposta certa é a letra <b>{{q.certa}}</b>.</p>
+				  </div>
+				</div>
+			</div>
+
 		</div>
 	</div>
-
+ 
 </div>
