@@ -1,8 +1,9 @@
 export class Questao {
-    enunciado: string
-    a: string
-    b: string
-    c: string
-    d: string
-    certa: string
+    texto: string
+    alternativa_a: string
+    alternativa_b: string
+    alternativa_c: string
+    alternativa_d: string
+    alternativa_correta: string
 }
+

@@ -11,16 +11,19 @@ export class ExerciciosComponent implements OnInit {
 
   questoes: Questao[];
   escolha: string;
-  acertou: boolean;
+  acertou: boolean = true;
   constructor(private ex: ExercicioService) {
     this.escolha = '';
-    this.acertou = undefined;
+    
+    
   }
 
   ngOnInit(): void {
+
     this.ex.obterQuestoes().subscribe(res => {
       this.questoes = res;
     });
+
   }
 
   verificarResposta(correta: string, escolha: string) {

@@ -3,6 +3,8 @@
 </h1> 
 
 
+ 
+
 <div class="container" *ngFor="let q of questoes; let i = index">
 
 	<div class="row"> 
@@ -10,7 +12,7 @@
 			<tbody>
 				<tr>
 					<td>
-						<p>{{q.enunciado}}</p>
+						<p>{{q.texto}}</p>
 					</td>
 				</tr>
 			</tbody>
@@ -22,33 +24,34 @@
 			<ul class="list-group">
 
 				<label>
-					<li class="list-group-item" [class.certa]="a.value === q.certa && a.checked" [class.errada]="a.value !== q.certa && a.checked">
-		                a) <input type="radio" name="q{{i+1}}" value="a" #a (click)="verificarResposta(q.certa, 'a')">
-		                {{q.a}}
+
+					<li class="list-group-item" [class.certa]="alternativa_a.value === q.alternativa_correta && alternativa_a.checked" [class.errada]="alternativa_a.value !== q.alternativa_correta && alternativa_a.checked">
+		                <input type="radio" name="q{{i+1}}" value="alternativa_a" #alternativa_a (click)="verificarResposta(q.alternativa_correta, 'alternativa_a')">
+		                {{q.alternativa_a}}
 		            </li>
 		        </label>
 		        
 
   				<label>
-  					<li class="list-group-item" [class.certa]="b.value === q.certa && b.checked" [class.errada]="b.value !== q.certa && b.checked">
-                        b) <input type="radio" name="q{{i+1}}" value="b" #b (click)="verificarResposta(q.certa, 'b')">
-                        {{q.b}}
+  					<li class="list-group-item" [class.certa]="alternativa_b.value === q.alternativa_correta && alternativa_b.checked" [class.errada]="alternativa_b.value !== q.alternativa_correta && alternativa_b.checked">
+                        <input type="radio" name="q{{i+1}}" value="alternativa_b" #alternativa_b (click)="verificarResposta(q.alternativa_correta, 'alternativa_b')">
+                        {{q.alternativa_b}}
                     </li>
                 </label>
 
 
   				<label>
-  					<li class="list-group-item" [class.certa]="c.value === q.certa && c.checked" [class.errada]="c.value !== q.certa && c.checked">
-                        c) <input type="radio" name="q{{i+1}}" value="c" #c (click)="verificarResposta(q.certa, 'c')">
-                        {{q.c}}
+  					<li class="list-group-item" [class.certa]="alternativa_c.value === q.alternativa_correta && alternativa_c.checked" [class.errada]="alternativa_c.value !== q.alternativa_correta && alternativa_c.checked">
+                        <input type="radio" name="q{{i+1}}" value="alternativa_c" #alternativa_c (click)="verificarResposta(q.alternativa_correta, 'alternativa_c')">
+                        {{q.alternativa_c}}
                     </li>
                 </label>
 
 
   				<label>
-  					<li class="list-group-item" [class.certa]="d.value === q.certa && d.checked" [class.errada]="d.value !== q.certa && d.checked">
-                        d) <input type="radio" name="q{{i+1}}" value="d" #d (click)="verificarResposta(q.certa, 'd')">
-                        {{q.d}}
+  					<li class="list-group-item" [class.certa]="alternativa_d.value === q.alternativa_correta && alternativa_d.checked" [class.errada]="alternativa_d.value !== q.alternativa_correta && alternativa_d.checked">
+                        <input type="radio" name="q{{i+1}}" value="alternativa_d" #alternativa_d (click)="verificarResposta(q.alternativa_correta, 'alternativa_d')">
+                        {{q.alternativa_d}}
                     </li>
                 </label>
 
@@ -62,7 +65,7 @@
 				<div class="card border border-danger" id="resposta-errada" style="width: 18rem;">
 				  <div class="card-body">
 				   <p>Ops! Resposta errada.</p>
-				   <p>A resposta certa é a letra <b>{{q.certa}}</b>.</p>
+				   <p>A resposta certa é a letra <b>{{q.alternativa_correta}}</b>.</p>
 				  </div>
 				</div>
 			</div>
