@@ -1,6 +1,7 @@
 import { Questao } from './../model/questao';
 import { ExercicioService } from './../model/exercicio.service';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-exercicios',
@@ -11,9 +12,10 @@ export class ExerciciosComponent implements OnInit {
 
   questoes: Questao[];
   escolha: string;
-  acertou: boolean = true;
-  constructor(private ex: ExercicioService) {
+  acertou: boolean = undefined;
+  constructor( private route: ActivatedRoute, private ex: ExercicioService) {
     this.escolha = '';
+    this.acertou = true;
     
     
   }

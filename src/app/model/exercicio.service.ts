@@ -14,7 +14,8 @@ export class ExercicioService {
   obterQuestoes(): Observable<Questao[]> {
     return this.http.get<Questao[]>(`${this.URL}/tbquestoes`);
   }
-
+  
+  
   
   
 }
