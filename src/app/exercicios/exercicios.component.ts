@@ -28,6 +28,18 @@ export class ExerciciosComponent implements OnInit {
 
   }
 
+  mostrarQuestoesDisciplina: boolean = true;
+
+
+  QuestoesDisciplina(){
+    this.mostrarQuestoesDisciplina = !this.mostrarQuestoesDisciplina;
+  }
+
+
+  RetornarListaDisciplina(){
+    this.mostrarQuestoesDisciplina = true;
+  }
+
   verificarResposta(correta: string, escolha: string) {
     this.escolha = escolha;
     if (escolha === correta) {
