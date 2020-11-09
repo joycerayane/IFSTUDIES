@@ -4,7 +4,10 @@
 
 <div *ngIf="this.mostrarQuestoesDisciplina">
 	<ul>
-		<li (click)="QuestoesDisciplina()" >Português</li>
+		<li (click)="QuestoesDisciplina()">
+			<a  [routerLink]="['/exercicios']" [queryParams]="{cod_disciplina:1,cod_assunto:12}">Português</a>
+		</li>
+
 		<li (click)="QuestoesDisciplina()" >Matemática</li>
 		<li (click)="QuestoesDisciplina()" >Redação</li>
 	</ul>

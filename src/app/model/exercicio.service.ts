@@ -11,8 +11,8 @@ export class ExercicioService {
 
   constructor(private http: HttpClient) { }
 
-  obterQuestoes(): Observable<Questao[]> {
-    return this.http.get<Questao[]>(`${this.URL}/tbquestoes`);
+  obterQuestoes(cod_disciplina: number, cod_assunto: number): Observable<Questao[]> {
+    return this.http.get<Questao[]>(`${this.URL}/tbquestoes/${cod_disciplina}/${cod_assunto}`);
   }
   
   
