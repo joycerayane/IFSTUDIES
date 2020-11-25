@@ -10,6 +10,7 @@ import { CursosComponent } from './cursos/cursos.component';
 import { EstrategiaComponent } from './estrategia/estrategia.component';
 
 
+
 const routes: Routes = [
 
 	{ path: '', component: HomeComponent },
@@ -19,6 +20,7 @@ const routes: Routes = [
 	{ path: 'sobre', component: SobreComponent },
 	{ path: 'cursos', component: CursosComponent },
 	{ path: 'estrategia', component: EstrategiaComponent }
+	
 
 
 ];
