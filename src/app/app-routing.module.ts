@@ -8,6 +8,9 @@ import { SimuladosComponent } from './simulados/simulados.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { CursosComponent } from './cursos/cursos.component';
 import { EstrategiaComponent } from './estrategia/estrategia.component';
+import { DesenvolvedoresComponent } from './desenvolvedores/desenvolvedores.component';
+import { ProcseletivoComponent } from './procseletivo/procseletivo.component';
+
 
 
 const routes: Routes = [
@@ -18,7 +21,10 @@ const routes: Routes = [
 	{ path: 'simulados', component: SimuladosComponent },
 	{ path: 'sobre', component: SobreComponent },
 	{ path: 'cursos', component: CursosComponent },
-	{ path: 'estrategia', component: EstrategiaComponent }
+	{ path: 'estrategia', component: EstrategiaComponent },
+	{ path: 'desenvolvedores', component: DesenvolvedoresComponent},
+	{ path: 'procseletivo', component: ProcseletivoComponent}
+	
 
 
 ];
