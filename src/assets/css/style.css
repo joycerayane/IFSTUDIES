@@ -123,11 +123,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo {
-  font-size: 32px;
+  font-size: 52px;
   margin: 0;
   padding: 0;
   line-height: 1;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
@@ -138,8 +138,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo img {
-  max-height: 80px;
-  max-width: 80px;
+  max-height: 200px;
+  max-width: 100px;
 }
 
 @media (max-width: 992px) {
@@ -269,7 +269,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 8px 25px;
   white-space: nowrap;
   transition: 0.3s;
-  font-size: 18px;
+  font-size: 28pt;
   display: inline-block;
 }
 
@@ -530,6 +530,7 @@ section {
   background: #5fcf80;
   padding: 30px 0;
   color: #fff;
+  
 }
 
 @media (max-width: 992px) {
@@ -554,6 +555,7 @@ section {
 .about .content h3 {
   font-weight: 600;
   font-size: 26px;
+  background-color: #5fcf80;
 }
 
 .about .content ul {
@@ -1403,14 +1405,15 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  color: #37423b;
+  color: white;
   font-size: 14px;
-  background: #67923d;
+  background: #5fcf80;
+  font-family: "Open Sans", sans-serif;
 }
 
 #footer .footer-top {
-  padding: 40px 0 30px 0;
-  background: #67923d;
+  padding: 1px 0 1px 0;
+  background: #5fcf80;
 }
 
 #footer .footer-top .footer-contact {
@@ -1482,6 +1485,7 @@ section {
 
 #footer .footer-newsletter {
   font-size: 15px;
+  font-family: "Open Sans", sans-serif;
 }
 
 #footer .footer-newsletter h4 {
@@ -1490,6 +1494,7 @@ section {
   color: #444444;
   position: relative;
   padding-bottom: 12px;
+  font-family: "Open Sans", sans-serif;
 }
 
 #footer .footer-newsletter form {
@@ -1500,12 +1505,14 @@ section {
   border-radius: 50px;
   text-align: left;
   border: 1px solid #e0e5e2;
+  font-family: "Open Sans", sans-serif;
 }
 
 #footer .footer-newsletter form input[type="email"] {
   border: 0;
   padding: 4px 8px;
   width: calc(100% - 100px);
+  font-family: "Open Sans", sans-serif;
 }
 
 #footer .footer-newsletter form input[type="submit"] {
@@ -1522,24 +1529,29 @@ section {
   transition: 0.3s;
   border-radius: 50px;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  font-family: "Open Sans", sans-serif;
 }
 
 #footer .footer-newsletter form input[type="submit"]:hover {
   background: #3ac162;
+  font-family: "Open Sans", sans-serif;
 }
 
 #footer .credits {
   padding-top: 5px;
   font-size: 13px;
+  font-family: "Open Sans", sans-serif;
 }
 
 #footer .credits a {
   color: #3ac162;
   transition: 0.3s;
+  font-family: "Open Sans", sans-serif;
 }
 
 #footer .credits a:hover {
   color: #ffffff;
+  font-family: "Open Sans", sans-serif;
 }
 
 #footer .social-links a {
@@ -1555,10 +1567,12 @@ section {
   width: 36px;
   height: 36px;
   transition: 0.3s;
+  font-family: "Open Sans", sans-serif;
 }
 
 #footer .social-links a:hover {
   background: #3ac162;
   color: #fff;
   text-decoration: none;
+  font-family: "Open Sans", sans-serif;
 }
