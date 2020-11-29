@@ -14,6 +14,10 @@ import { SobreComponent } from './sobre/sobre.component';
 import { HomeComponent } from './home/home.component';
 import { CursosComponent } from './cursos/cursos.component';
 import { EstrategiaComponent } from './estrategia/estrategia.component';
+import { DesenvolvedoresComponent } from './desenvolvedores/desenvolvedores.component';
+import { ProcseletivoComponent } from './procseletivo/procseletivo.component';
+import { FooterComponent } from './footer/footer.component';
+
 
 
 
@@ -27,7 +31,10 @@ import { EstrategiaComponent } from './estrategia/estrategia.component';
     SobreComponent,
     HomeComponent,
     CursosComponent,
-    EstrategiaComponent
+    EstrategiaComponent,
+    DesenvolvedoresComponent,
+    ProcseletivoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

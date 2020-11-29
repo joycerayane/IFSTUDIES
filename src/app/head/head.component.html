@@ -1,31 +1,29 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-5  rounded ">
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top">
+  <div class="container d-flex align-items-center">
 
-  <img [src]="imageLogo" width="60" height="60" class="d-inline-block align-top" alt="" />
 
-  <h1 class="navbar-brand"> IF STUDIES  </h1>
+    <!--
+    <h1 class="logo mr-auto"><a href="index.html">IF STUDIES</a></h1> -->
+    <!-- Uncomment below if you prefer to use an image logo -->
+    <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
 
-  <button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <nav class="nav-menu d-none d-lg-block">
+      <ul>
+        <li><a routerLink="/" class="nav-link active">Home</a></li>
+        <li><a routerLink="/sobre" class="nav-link active">Sobre</a></li>
+        <li><a routerLink="/disciplinas" class="nav-link active">Disciplinas</a></li>
+        <li><a routerLink="/desenvolvedores" class="nav-link active">Desenvolvedores</a></li>
+        <li><a routerLink="/procseletivo" class="nav-link active">Processos seletivos</a></li>
+        <li><a routerLink="/exercicios" class="nav-link active">Exercícios</a></li>
+        
+       
+       
 
-  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-    <ul class="navbar-nav ">
-      <li class="nav-item">
-        <a routerLink="" class="nav-link active"  title="Home">Home <span class="sr-only">(Página atual)</span></a>
-      </li>
-      <li class="nav-item">
-        <a routerLink="/disciplinas" class="nav-link active" title="Disciplinas">Disciplinas</a>
-      </li>
-      <li class="nav-item">
-        <a routerLink="/exercicios" class="nav-link active" title="Exercícios">Exercícios</a>
-      </li>
-      <li class="nav-item">
-        <a routerLink="/simulados" class="nav-link active" title="Simulados">Simulados</a>
-      </li>
-      <li class="nav-item">
-        <a routerLink="/sobre" class="nav-link active" title="Sobre o IF">Sobre o IF</a>
-      </li>
-    </ul>
+      </ul>
+    </nav><!-- .nav-menu -->
+
+  
+
   </div>
-
-</nav>
+</header><!-- End Header -->
