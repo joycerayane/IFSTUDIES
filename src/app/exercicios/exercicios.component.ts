@@ -26,7 +26,7 @@ export class ExerciciosComponent implements OnInit {
     const cod_assunto: number = +this.route.snapshot.paramMap.get('cod_assunto');
 
     this.ex.obterQuestoes(cod_disciplina, cod_assunto).subscribe(res => {
-      console.log(res);
+      this.questoes = res;
     });
 
   }
