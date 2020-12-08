@@ -1,3 +1,5 @@
+<br><br> <br> <br> <br> <br>
+
 <section  class="d-flex justify-content-center align-items-center">
 	<div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
 
@@ -5,7 +7,8 @@
 	Exercícios
 </h1> 
 
-<div *ngIf="this.mostrarQuestoesDisciplina">
+<!--CÓDIGO QUE ALTEREI E NÃO TAVA MOSTRANDO AS QUESTÕES-->
+<!--<div *ngIf="this.mostrarQuestoesDisciplina">
 	<ul>
 		<li (click)="QuestoesDisciplina()">
 			<a  [routerLink]="['/exercicios']" [queryParams]="{cod_disciplina:1,cod_assunto:12}">Português</a>
@@ -18,7 +21,7 @@
  
 
 <div *ngIf="!this.mostrarQuestoesDisciplina">
-	<a (click)="RetornarListaDisciplina()">Voltar Para Lista de Materias</a>
+	<a (click)="RetornarListaDisciplina()">Voltar Para Lista de Materias</a>-->
 	
 	<div class="container" *ngFor="let q of questoes; let i = index">
 
@@ -137,5 +140,5 @@
 	</div>
 
 </div>
-</div>
+<!--</div>-->
 </section>
