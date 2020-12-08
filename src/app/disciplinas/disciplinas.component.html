@@ -1,6 +1,6 @@
 
-
-<nav>
+<br><br><br><br><br><br><br><br>
+<nav classe="nav-menu d-none d-lg-block" id="menu">
 	<div class="nav nav-tabs" id="nav-tab" role="tablist">
 
 		<a (click)="AlterarListaMateria()" routerLink="portugues/:id" class="nav-item nav-link active" id="nav-portugues-tab" data-toggle="tab" role="tab" aria-controls="nav-portugues" aria-selected="true">Português</a>
@@ -20,6 +20,32 @@
 <div *ngIf="!this.mostrarListaPT" class="container ">
 	<router-outlet></router-outlet>
 </div>
+
+<!-- Footer-->
+<footer id="footer">
+
+	<div class="footer-top">
+	  <div class="container">
+		<div class="row">
+  <div class="container d-md-flex py-4">
+  
+	<div class="mr-md-auto text-center text-md-left">
+	  <div class="copyright">
+		&copy; Copyright <strong><span>IF STUDIES</span></strong>. All Rights Reserved
+	  </div>
+	 
+	</div>
+	<div class="social-links text-center text-md-right pt-3 pt-md-0">
+	  
+	  <a href="https://www.instagram.com/if.studies/" class="instagram"><i class="bx bxl-instagram"></i></a>
+  
+	</div>
+  </div>
+  </div>
+	  </div>
+	</div>
+	
+  </footer><!-- End Footer -->
 
 
 
