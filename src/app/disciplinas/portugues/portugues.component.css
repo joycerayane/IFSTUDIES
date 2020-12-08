@@ -5,52 +5,11 @@ div .card-disciplina{
   position: relative;
   margin-bottom: 50px;
   text-align: center;
-  font-family: "Poppins", sans-serif;
-  background-color: #5fcf80;
-  color: #fff;
-  
-  
   
 } 
-div .card-body {
-  border: 0;
-  padding: 0 30px;
-  margin-bottom: 60px;
-  position: relative;
-}
 
 div .card-disciplina img{
   width: 50px;
   height: 80px;
 
-}
-
-.assunto{
-  position: relative;
-  margin: auto; 
-  margin-bottom: 50px;
-  
-}
-
-.assunto img{
-  margin: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin-bottom: 50px;
-  margin-top: 30px;
-}
-
-.assunto h1{
-  margin-bottom: 30px;
-}
-
-.assunto h3, h5{
-  margin-top: 30px;
-}
-
-.espaco-texto p{
-  margin-bottom: 20px;
-  margin-top: 20px;
 }
