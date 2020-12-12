@@ -140,7 +140,7 @@ app.get("/tbassunto/:nomeassunto", (req, res) => {
 
 
 app.get("/tbquestoes/:cod_disc/:cod_assunto", (req, res) => {
-  const disc = req.params.cod_disc;
+  const disc = req.params.cod_disciplina;
   const assunto = req.params.cod_assunto;  
   con.query(`SELECT * FROM tbquestoes AS q WHERE q.cod_assunto = ${assunto} AND q.cod_disciplina = ${disc}`, function (err, result) { 
       if (err) { 
