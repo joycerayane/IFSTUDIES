@@ -22,34 +22,26 @@ export class ExerciciosComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.ex.obterQuestoes().subscribe(res => {
-      this.questoes = res;
-    });
-
-  }
-
-  /*CÓDIGO QUE ALTEREI E NÃO TAVA MOSTRANDO AS QUESTÕES*/
-  
-  /*mostrarQuestoesDisciplina: boolean = true;
-
-
-  QuestoesDisciplina(){
     const cod_disciplina: number = +this.route.snapshot.paramMap.get('cod_disciplina');
     const cod_assunto: number = +this.route.snapshot.paramMap.get('cod_assunto');
 
     this.ex.obterQuestoes(cod_disciplina, cod_assunto).subscribe(res => {
-      this.questoes = res;
+      console.log(res);
     });
 
+  }
+
+  mostrarQuestoesDisciplina: boolean = true;
+
+
+  QuestoesDisciplina(){
     this.mostrarQuestoesDisciplina = !this.mostrarQuestoesDisciplina;
-
-
   }
 
 
   RetornarListaDisciplina(){
     this.mostrarQuestoesDisciplina = true;
-  }*/
+  }
 
   verificarResposta(correta: string, escolha: string) {
     this.escolha = escolha;
