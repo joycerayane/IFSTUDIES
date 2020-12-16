@@ -46,7 +46,7 @@ app.get("/tbquestoes", (req, res) => {
 
 
 //pega apenas uma questão pelo seu código 
-app.get("/tbquestoes/:cod_disciplina/:cod_assunto/:cod_questoes", (req, res) => {
+/*app.get("/tbquestoes/:cod_disciplina/:cod_assunto/:cod_questoes", (req, res) => {
   const questoes = req.params.cod_questoes;  
   con.query(`SELECT * FROM tbquestoes WHERE cod_questoes = ${questoes}`, function (err, result) { 
 
@@ -60,6 +60,8 @@ app.get("/tbquestoes/:cod_disciplina/:cod_assunto/:cod_questoes", (req, res) => 
   
   });
 });
+
+*/
 
 
 //CASO DÊ ALGO RUIM, TENTE COLOCAR UMA VARIAVEL EM CADA CODIGO var asunto = req.body
@@ -140,9 +142,9 @@ app.get("/tbassunto/:nomeassunto", (req, res) => {
 
 
 app.get("/tbquestoes/:cod_disc/:cod_assunto", (req, res) => {
-  const disc = req.params.cod_disciplina;
+  const disc = req.params.cod_disc;
   const assunto = req.params.cod_assunto;  
-  con.query(`SELECT * FROM tbquestoes AS q WHERE q.cod_assunto = ${assunto} AND q.cod_disciplina = ${disc}`, function (err, result) { 
+  con.query(`SELECT * FROM tbquestoes  WHERE cod_assunto = ${assunto} AND cod_disciplina =${disc}`, function (err, result) { 
       if (err) { 
           res.send(err); 
       } 

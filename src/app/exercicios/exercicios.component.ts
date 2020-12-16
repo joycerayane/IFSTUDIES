@@ -22,12 +22,6 @@ export class ExerciciosComponent implements OnInit {
 
   ngOnInit(): void {
 
-    const cod_disciplina: number = +this.route.snapshot.paramMap.get('cod_disciplina');
-    const cod_assunto: number = +this.route.snapshot.paramMap.get('cod_assunto');
-
-    this.ex.obterQuestoes(cod_disciplina, cod_assunto).subscribe(res => {
-      console.log(res);
-    });
 
   }
 
@@ -35,6 +29,13 @@ export class ExerciciosComponent implements OnInit {
 
 
   QuestoesDisciplina(){
+    
+    const cod_disc: number = +this.route.snapshot.paramMap.get('cod_disc');
+    const cod_assunto: number = +this.route.snapshot.paramMap.get('cod_assunto');
+
+    this.ex.obterQuestoes(1,1 ).subscribe(res => {
+      this.questoes = res;
+    });
     this.mostrarQuestoesDisciplina = !this.mostrarQuestoesDisciplina;
   }
 
