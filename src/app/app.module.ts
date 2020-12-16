@@ -17,6 +17,7 @@ import { EstrategiaComponent } from './estrategia/estrategia.component';
 import { DesenvolvedoresComponent } from './desenvolvedores/desenvolvedores.component';
 import { ProcseletivoComponent } from './procseletivo/procseletivo.component';
 import { FooterComponent } from './footer/footer.component';
+import { ExerciciosmatComponent } from './exerciciosmat/exerciciosmat.component';
 
 
 
@@ -34,7 +35,8 @@ import { FooterComponent } from './footer/footer.component';
     EstrategiaComponent,
     DesenvolvedoresComponent,
     ProcseletivoComponent,
-    FooterComponent
+    FooterComponent,
+    ExerciciosmatComponent
   ],
   imports: [
     BrowserModule,

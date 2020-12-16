@@ -13,4 +13,21 @@
  .container {
     font-family: "Poppins", sans-serif; 
  }
+
+ div .card-disciplina{
+   margin: 10px auto;
+   width: 220px;
+   height: 160px;
+   position: relative;
+   margin-bottom: 50px;
+   text-align: center;
+   
+ } 
+ 
+ div .card-disciplina img{
+   width: 50px;
+   height: 80px;
+ 
+ }
+ 
  
