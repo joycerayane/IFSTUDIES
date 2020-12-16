@@ -14,6 +14,10 @@ export class ExercicioService {
   obterQuestoes(cod_disc: number, cod_assunto: number): Observable<Questao[]> {
     return this.http.get<Questao[]>(`${this.URL}/tbquestoes/${cod_disc}/${cod_assunto}`);
   }
+
+  obterQuestoesPortugues(cod_disc: number): Observable<Questao[]> {
+    return this.http.get<Questao[]>(`${this.URL}/tbquestoes/${cod_disc}`);
+  }
   
   
   

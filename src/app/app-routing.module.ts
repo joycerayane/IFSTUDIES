@@ -10,6 +10,7 @@ import { CursosComponent } from './cursos/cursos.component';
 import { EstrategiaComponent } from './estrategia/estrategia.component';
 import { DesenvolvedoresComponent } from './desenvolvedores/desenvolvedores.component';
 import { ProcseletivoComponent } from './procseletivo/procseletivo.component';
+import { ExerciciosmatComponent } from './exerciciosmat/exerciciosmat.component';
 
 
 
@@ -23,7 +24,8 @@ const routes: Routes = [
 	{ path: 'cursos', component: CursosComponent },
 	{ path: 'estrategia', component: EstrategiaComponent },
 	{ path: 'desenvolvedores', component: DesenvolvedoresComponent},
-	{ path: 'procseletivo', component: ProcseletivoComponent}
+	{ path: 'procseletivo', component: ProcseletivoComponent},
+	{ path: 'exerciciosmat', component: ExerciciosmatComponent}
 	
 
 
