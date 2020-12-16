@@ -30,23 +30,14 @@ export class ExerciciosmatComponent implements OnInit {
   mostrarQuestoesDisciplina: boolean = true;
 
 
-  // tentativa de filtrar listas de disciplinas
- QuestoesPortugues(){
-   const cod_disc: number =+this.route.snapshot.paramMap.get('cod_disc');
-
-   this.ex.obterQuestoesPortugues(1).subscribe(res => {
-     this.questoes = res;
-   });
-   this.mostrarQuestoesDisciplina = !this.mostrarQuestoesDisciplina;
-
- }
+  
   QuestoesMatematica1(){
     
     const cod_disc: number = +this.route.snapshot.paramMap.get('cod_disc');
     const cod_assunto: number = +this.route.snapshot.paramMap.get('cod_assunto');
 
     this.ex.obterQuestoes(2,1 ).subscribe(res => {
-      this.questoes = res;
+      
     });
     this.mostrarQuestoesDisciplina = !this.mostrarQuestoesDisciplina;
   }

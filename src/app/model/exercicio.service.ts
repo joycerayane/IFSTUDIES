@@ -15,9 +15,6 @@ export class ExercicioService {
     return this.http.get<Questao[]>(`${this.URL}/tbquestoes/${cod_disc}/${cod_assunto}`);
   }
 
-  obterQuestoesPortugues(cod_disc: number): Observable<Questao[]> {
-    return this.http.get<Questao[]>(`${this.URL}/tbquestoes/${cod_disc}`);
-  }
   
   
   
