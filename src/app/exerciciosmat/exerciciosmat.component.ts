@@ -1,14 +1,14 @@
-import { Questao } from './../model/questao';
-import { ExercicioService } from './../model/exercicio.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Questao } from './../model/questao';
+import { ExercicioService } from './../model/exercicio.service';
 
 @Component({
-  selector: 'app-exercicios',
-  templateUrl: './exercicios.component.html',
-  styleUrls: ['./exercicios.component.css']
+  selector: 'app-exerciciosmat',
+  templateUrl: './exerciciosmat.component.html',
+  styleUrls: ['./exerciciosmat.component.css']
 })
-export class ExerciciosComponent implements OnInit {
+export class ExerciciosmatComponent implements OnInit {
 
   Icone = 'https://image.flaticon.com/icons/svg/926/926358.svg';
 
@@ -24,15 +24,6 @@ export class ExerciciosComponent implements OnInit {
 
   ngOnInit(): void {
 
-<<<<<<< HEAD
-    
-
-  }
-
-  /*CÓDIGO QUE ALTEREI E NÃO TAVA MOSTRANDO AS QUESTÕES*/
-  
-  mostrarQuestoesDisciplina: boolean = true;
-=======
 
   }
 
@@ -42,7 +33,6 @@ export class ExerciciosComponent implements OnInit {
   // tentativa de filtrar listas de disciplinas
  QuestoesPortugues(){
    const cod_disc: number =+this.route.snapshot.paramMap.get('cod_disc');
->>>>>>> cbb87a5eda82ed72ded068ceaa06fbdbe4a28d2b
 
    this.ex.obterQuestoesPortugues(1).subscribe(res => {
      this.questoes = res;
@@ -50,12 +40,12 @@ export class ExerciciosComponent implements OnInit {
    this.mostrarQuestoesDisciplina = !this.mostrarQuestoesDisciplina;
 
  }
-  QuestoesPortugues1(){
+  QuestoesMatematica1(){
     
     const cod_disc: number = +this.route.snapshot.paramMap.get('cod_disc');
     const cod_assunto: number = +this.route.snapshot.paramMap.get('cod_assunto');
 
-    this.ex.obterQuestoes(1,1 ).subscribe(res => {
+    this.ex.obterQuestoes(2,1 ).subscribe(res => {
       this.questoes = res;
     });
     this.mostrarQuestoesDisciplina = !this.mostrarQuestoesDisciplina;

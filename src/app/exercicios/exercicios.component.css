@@ -3,11 +3,13 @@ input[type="radio"] {
 }
 
 .certa{
-	background: #E0FFFF;
-	border-color: #3CB371;
+   color: white;
+	background: #066106;
+	border-color: #005a29;
 }
 .errada{
-	background: #FFDAB9;
+   color: white;
+	background: #c40808;
 	border-color: #B22222;
 }
 
@@ -17,7 +19,7 @@ label{
 }
 
 #resposta-errada{
-	background: #FFA07A;
+	background: #ee0303;
 
 }
 
@@ -31,3 +33,19 @@ li{
 	border-width: 1px;
     border-color: black;
 }
+.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+    color: #5fcf80;
+  }
+ #menu{
+    display: block;
+    position: relative;
+    color: #37423b;
+    transition: 0.3s;
+    font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+ }
+ .container {
+    font-family: "Poppins", sans-serif; 
+ }
+ 
