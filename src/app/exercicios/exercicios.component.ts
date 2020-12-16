@@ -22,15 +22,13 @@ export class ExerciciosComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.ex.obterQuestoes().subscribe(res => {
-      this.questoes = res;
-    });
+    
 
   }
 
   /*CÓDIGO QUE ALTEREI E NÃO TAVA MOSTRANDO AS QUESTÕES*/
   
-  /*mostrarQuestoesDisciplina: boolean = true;
+  mostrarQuestoesDisciplina: boolean = true;
 
 
   QuestoesDisciplina(){
@@ -49,7 +47,7 @@ export class ExerciciosComponent implements OnInit {
 
   RetornarListaDisciplina(){
     this.mostrarQuestoesDisciplina = true;
-  }*/
+  }
 
   verificarResposta(correta: string, escolha: string) {
     this.escolha = escolha;
