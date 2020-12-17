@@ -1,37 +1,61 @@
-import { Questao } from './questao';
-import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Questao } from './../model/questao';
+import { ExercicioService } from './../model/exercicio.service';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
-@Injectable({
-  providedIn: 'root'
+@Component({
+  selector: 'app-exercicios',
+  templateUrl: './exercicios.component.html',
+  styleUrls: ['./exercicios.component.css']
 })
-export class ExercicioService {
-  public URL: string = 'http://localhost:3000';
+export class ExerciciosComponent implements OnInit {
 
-  constructor(private http: HttpClient) { }
+  Icone = 'https://image.flaticon.com/icons/svg/926/926358.svg';
 
-<<<<<<< HEAD
-  /*obterQuestoes(): Observable<Questao[]> {
-    return this.http.get<Questao[]>(`${this.URL}/tbquestoes`);
-  }*/
-
-  /*CÓDIGO QUE ALTEREI E NÃO TAVA MOSTRANDO AS QUESTÕES*/
-
-  obterQuestoes(cod_disciplina: number, cod_assunto: number): Observable<Questao[]> {
-    return this.http.get<Questao[]>(`${this.URL}/tbquestoes/${cod_disciplina}/${cod_assunto}`);
-  } /* CÓDIGO QUE TÁ DANDO ERRO*/
-=======
-  obterQuestoes(cod_disc: number, cod_assunto: number): Observable<Questao[]> {
-    return this.http.get<Questao[]>(`${this.URL}/tbquestoes/${cod_disc}/${cod_assunto}`);
+  questoes: Questao[];
+  escolha: string;
+  acertou: boolean = undefined;
+ 
+  constructor( private route: ActivatedRoute, private ex: ExercicioService) {
+    this.escolha = '';
+    this.acertou = true;
+    
+    
   }
 
-  obterQuestoesPortugues(cod_disc: number): Observable<Questao[]> {
-    return this.http.get<Questao[]>(`${this.URL}/tbquestoes/${cod_disc}`);
+  ngOnInit() {
+    
+
+
   }
->>>>>>> cbb87a5eda82ed72ded068ceaa06fbdbe4a28d2b
-  
-  
-  
-  
+
+  mostrarQuestoesDisciplina: boolean = true;
+
+
+ 
+  QuestoesPortugues1(cod_disc: number, cod_assunto: number){
+    
+    /*const cod_disc: number = +this.route.snapshot.paramMap.get('cod_disc');
+    const cod_assunto: number = +this.route.snapshot.paramMap.get('cod_assunto'); */
+    console.log(cod_disc);
+    console.log(cod_assunto);
+    this.ex.obterQuestoes(cod_disc, cod_assunto).subscribe(res => {
+     this.questoes = res;
+    });
+    this.mostrarQuestoesDisciplina = !this.mostrarQuestoesDisciplina;
+  }
+
+
+  RetornarListaDisciplina(){
+    this.mostrarQuestoesDisciplina = true;
+  }
+
+  verificarResposta(correta: string, escolha: string) {
+    this.escolha = escolha;
+    if (escolha === correta) {
+      this.acertou = true;
+    } else {
+      this.acertou = false;
+    }
+  }
 }

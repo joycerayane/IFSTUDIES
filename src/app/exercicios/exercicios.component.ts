@@ -15,6 +15,7 @@ export class ExerciciosComponent implements OnInit {
   questoes: Questao[];
   escolha: string;
   acertou: boolean = undefined;
+ 
   constructor( private route: ActivatedRoute, private ex: ExercicioService) {
     this.escolha = '';
     this.acertou = true;
@@ -22,41 +23,19 @@ export class ExerciciosComponent implements OnInit {
     
   }
 
-  ngOnInit(): void {
-
-<<<<<<< HEAD
+  ngOnInit() {
     
 
   }
-
-  /*CÓDIGO QUE ALTEREI E NÃO TAVA MOSTRANDO AS QUESTÕES*/
   
-  mostrarQuestoesDisciplina: boolean = true;
-=======
-
-  }
-
-  mostrarQuestoesDisciplina: boolean = true;
-
-
-  // tentativa de filtrar listas de disciplinas
- QuestoesPortugues(){
-   const cod_disc: number =+this.route.snapshot.paramMap.get('cod_disc');
->>>>>>> cbb87a5eda82ed72ded068ceaa06fbdbe4a28d2b
-
-   this.ex.obterQuestoesPortugues(1).subscribe(res => {
-     this.questoes = res;
-   });
-   this.mostrarQuestoesDisciplina = !this.mostrarQuestoesDisciplina;
-
- }
-  QuestoesPortugues1(){
+  Questao(cod_disc: number, cod_assunto:number){
     
-    const cod_disc: number = +this.route.snapshot.paramMap.get('cod_disc');
-    const cod_assunto: number = +this.route.snapshot.paramMap.get('cod_assunto');
-
-    this.ex.obterQuestoes(1,1 ).subscribe(res => {
-      this.questoes = res;
+    /*const cod_disc: number = +this.route.snapshot.paramMap.get('cod_disc');
+    const cod_assunto: number = +this.route.snapshot.paramMap.get('cod_assunto'); */
+    console.log(cod_disc);
+    console.log(cod_assunto);
+    this.ex.obterQuestoes(cod_disc, cod_assunto).subscribe(res => {
+     this.questoes = res;
     });
     this.mostrarQuestoesDisciplina = !this.mostrarQuestoesDisciplina;
   }
