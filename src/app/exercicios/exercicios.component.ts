@@ -26,14 +26,9 @@ export class ExerciciosComponent implements OnInit {
   ngOnInit() {
     
 
-
   }
-
-  mostrarQuestoesDisciplina: boolean = true;
-
-
- 
-  QuestoesPortugues1(cod_disc: number, cod_assunto: number){
+  
+  Questao(cod_disc: number, cod_assunto:number){
     
     /*const cod_disc: number = +this.route.snapshot.paramMap.get('cod_disc');
     const cod_assunto: number = +this.route.snapshot.paramMap.get('cod_assunto'); */
